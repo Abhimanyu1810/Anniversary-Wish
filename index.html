@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anniversary Quiz ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="quiz-container" id="quizBox">
+    <div class="decor top-left">🎂</div>
+    <div class="decor top-right">⭐</div>
+    <div class="decor bottom-left">⭐</div>
+    <div class="decor bottom-right">🎂</div>
+
+    <h1>Anniversary Quiz</h1>
+    <h3 id="question"></h3>
+
+    <input type="text" id="answer" placeholder="Your answer">
+    <br>
+    <button onclick="checkAnswer()">Submit</button>
+    <p class="error" id="errorMsg"></p>
+</div>
+
+<div class="quiz-container wish hidden" id="wishBox">
+    <div class="cake-left">🎂</div>
+    <div class="cake-right">🎂</div>
+    <h1>Happy 23rd Anniversary ❤️</h1>
+    <img src="anni.jpeg" alt="Mom & Dad">
+    <p>
+        Dear Maa & Baba,<br><br>
+        23 years of love, patience, and togetherness ❤️<br>
+        You both are my biggest inspiration.<br>
+        With all my love 💕
+    </p>
+</div>
+
+<audio id="song" src="anni_song.mp3"></audio>
+
+<!-- JS from public folder -->
+<script src="script.js"></script>
+</body>
+</html>
