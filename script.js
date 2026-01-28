@@ -3,7 +3,7 @@ const quiz = [
     { q: "What was the only mutton starter item that was there in your wedding?", a: "mutton cutlet" },
     { q: "What was the year when you both went to Eden Gardens to watch your first cricket match together?", a: "2016" },
     { q: "Who is baba's favourite cricketer?", a: "Sir Viv Richards" },
-    { q: "What is Maa's favourite desser?", a: "chutney" }
+    { q: "What is Maa's favourite dessert?", a: "chutney" }
 ];
 
 let current = 0;
@@ -13,7 +13,7 @@ document.getElementById("question").innerText = quiz[current].q;
 function checkAnswer() {
     const user = document.getElementById("answer").value.trim().toLowerCase();
 
-    if (user === quiz[current].a) {
+    if (user === quiz[current].a.toLowerCase()) {
         current++;
         document.getElementById("answer").value = "";
         document.getElementById("errorMsg").innerText = "";
@@ -65,3 +65,4 @@ function confettiBlast() {
   }, 120);
 
 }
+
