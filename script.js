@@ -1,9 +1,9 @@
 const quiz = [
     { q: "What year of your anniversary is this?", a: "23" },
-    /*{ q: "Who proposed first? (Mom/Dad)", a: "1" },
-    { q: "Which month did you get married?", a: "2" },
-    { q: "What is your favourite sweet together?", a: "3" },
-    { q: "How many kids do you have?", a: "4" }*/
+    { q: "What was the only mutton starter item that was there in your wedding?", a: "mutton cutlet" },
+    { q: "What was the year when you both went to Eden Gardens to watch your first cricket match together?", a: "2016" },
+    { q: "Who is baba's favourite cricketer?", a: "Sir Viv Richards" },
+    { q: "What is Maa's favourite desser?", a: "chutney" }
 ];
 
 let current = 0;
@@ -63,4 +63,5 @@ function confettiBlast() {
 
     setTimeout(() => conf.remove(), 5000);
   }, 120);
+
 }
